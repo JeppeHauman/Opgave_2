@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<script src="https://unpkg.com/vue@next"></script>
+
+<title>Opgave 3</title>
+</head>
+<body>
+    <h1>Opgave 3</h1>
+    <div id="app">
+        <form class="form-inline">
+            <input v-model="input" class="form-control" type="text" placeholder="YourWord">
+            <button v-on:click=Add() class="btn btn-light" type="button">Do stuff!</button>
+        </form>
+        <ol>
+            <li>{{output}}</li>
+            <li>{{Upper}}</li>
+            <li>{{Lower}}</li>
+        </ol>
+        <div>
+            <table class="table table-striped" style="width: 43%;">
+                <tbody>
+                    <tr>
+                        <th>1</th>
+                        <td>{{output}}</td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>{{Upper}}</td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>{{Lower}}</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
